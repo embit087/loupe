@@ -1,0 +1,176 @@
+{
+ "author": "paper.form",
+ "asset": "DEMO00201.carousel",
+ "method": "Pillow on the extracted frames, in viewing order (sample data).",
+ "summary": {
+  "brightness": 0.7,
+  "brightnessArc": [
+   0.852,
+   0.667,
+   0.657
+  ],
+  "contrast": 0.106,
+  "saturation": 0.286,
+  "colourfulness": 46.37,
+  "monochrome": false,
+  "sharpness": 1479.9,
+  "palette": [
+   {
+    "hex": "#cfbfa1",
+    "weight": 0.19
+   },
+   {
+    "hex": "#787a3d",
+    "weight": 0.121
+   },
+   {
+    "hex": "#ede5dd",
+    "weight": 0.12
+   },
+   {
+    "hex": "#b0a462",
+    "weight": 0.117
+   },
+   {
+    "hex": "#eaeddd",
+    "weight": 0.113
+   },
+   {
+    "hex": "#ece5dd",
+    "weight": 0.043
+   }
+  ]
+ },
+ "frames": [
+  {
+   "id": "01",
+   "brightness": 0.852,
+   "contrast": 0.144,
+   "saturation": 0.123,
+   "colourfulness": 37.073,
+   "sharpness": 1769.0,
+   "colours": [
+    {
+     "hex": "#ede5dd",
+     "share": 0.6
+    },
+    {
+     "hex": "#ece5dd",
+     "share": 0.215
+    },
+    {
+     "hex": "#b3bfc9",
+     "share": 0.098
+    },
+    {
+     "hex": "#eee6de",
+     "share": 0.087
+    }
+   ]
+  },
+  {
+   "id": "02",
+   "brightness": 0.733,
+   "contrast": 0.11,
+   "saturation": 0.217,
+   "colourfulness": 18.867,
+   "sharpness": 1566.0,
+   "colours": [
+    {
+     "hex": "#cfbfa1",
+     "share": 0.951
+    },
+    {
+     "hex": "#464139",
+     "share": 0.031
+    },
+    {
+     "hex": "#cfbf9f",
+     "share": 0.009
+    },
+    {
+     "hex": "#d3c3a4",
+     "share": 0.009
+    }
+   ]
+  },
+  {
+   "id": "03",
+   "brightness": 0.602,
+   "contrast": 0.079,
+   "saturation": 0.464,
+   "colourfulness": 74.295,
+   "sharpness": 959.8,
+   "colours": [
+    {
+     "hex": "#b0a462",
+     "share": 0.583
+    },
+    {
+     "hex": "#b4a86d",
+     "share": 0.152
+    },
+    {
+     "hex": "#b0a461",
+     "share": 0.137
+    },
+    {
+     "hex": "#3b75a6",
+     "share": 0.127
+    }
+   ]
+  },
+  {
+   "id": "04",
+   "brightness": 0.455,
+   "contrast": 0.04,
+   "saturation": 0.498,
+   "colourfulness": 61.967,
+   "sharpness": 1190.2,
+   "colours": [
+    {
+     "hex": "#787a3d",
+     "share": 0.604
+    },
+    {
+     "hex": "#868651",
+     "share": 0.162
+    },
+    {
+     "hex": "#777a3c",
+     "share": 0.135
+    },
+    {
+     "hex": "#5a776d",
+     "share": 0.099
+    }
+   ]
+  },
+  {
+   "id": "05",
+   "brightness": 0.859,
+   "contrast": 0.157,
+   "saturation": 0.128,
+   "colourfulness": 39.65,
+   "sharpness": 1914.4,
+   "colours": [
+    {
+     "hex": "#eaeddd",
+     "share": 0.564
+    },
+    {
+     "hex": "#e9eddd",
+     "share": 0.212
+    },
+    {
+     "hex": "#eaeede",
+     "share": 0.113
+    },
+    {
+     "hex": "#acc0c8",
+     "share": 0.11
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "author": "paper.form",
+ "asset": "DEMO00201.carousel",
+ "assessedAt": "2026-10-01",
+ "assessedBy": "Sample data, written for the demo",
+ "values": {
+  "transitions": {
+   "value": "Not applicable: a carousel viewed swipe by swipe",
+   "confidence": "high"
+  },
+  "motionInFrame": {
+   "value": "None: still images",
+   "confidence": "high"
+  },
+  "texture": {
+   "value": "Warm paper tone with a faint construction grid",
+   "confidence": "medium"
+  },
+  "markPlacement": {
+   "value": "One glyph pair centred on each sheet",
+   "confidence": "medium"
+  },
+  "negativeSpace": {
+   "value": "Working-sheet grid with wide margins",
+   "confidence": "medium"
+  },
+  "framing": {
+   "value": "Flat, front-on specimen sheets",
+   "confidence": "high"
+  },
+  "typeFamilies": {
+   "value": "One bold grotesk shown in several glyphs",
+   "confidence": "medium"
+  },
+  "typeSetting": {
+   "value": "Large glyph pair, small caption line underneath",
+   "confidence": "medium"
+  },
+  "motif": {
+   "value": "Letter pairs studied one per sheet",
+   "confidence": "high"
+  },
+  "contexts": {
+   "value": "Type specimen sheets",
+   "confidence": "high"
+  },
+  "photography": {
+   "value": "None",
+   "confidence": "high"
+  },
+  "audio": {
+   "value": "None (image carousel)",
+   "confidence": "high"
+  },
+  "genre": {
+   "value": "Type specimen carousel",
+   "confidence": "high"
+  },
+  "communication": {
+   "value": "Sheet by sheet, the family is shown one glyph pair at a time",
+   "confidence": "medium"
+  },
+  "voice": {
+   "value": "Calm · methodical · craft-proud",
+   "confidence": "medium"
+  },
+  "references": {
+   "value": "Designers' process posts and specimen sheets",
+   "confidence": "medium"
+  },
+  "relevance": {
+   "value": "A clear model for presenting a typeface on social",
+   "confidence": "medium"
+  },
+  "limits": {
+   "value": "Sample data: values were written for the demo, not measured from a real post",
+   "confidence": "high"
+  }
+ },
+ "keep": [
+  "warm paper tone",
+  "one glyph pair per sheet",
+  "small caption line"
+ ],
+ "vary": [
+  "the letters shown",
+  "the grid density"
+ ],
+ "avoid": [
+  "photography",
+  "busy layouts"
+ ]
+}

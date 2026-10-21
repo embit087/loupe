@@ -1,0 +1,21 @@
+# Loupe API Worker
+
+Local D1 backend for like/dislike annotations, followed accounts, archived related profiles, shared Exp Lab saved posts, and custom studies in `../web`. An R2 bucket stores study uploads.
+
+```sh
+npm install
+npm run db:migrate:local
+npm run dev
+```
+
+The Worker listens on `http://127.0.0.1:8787`. The Next app proxies same-origin requests from `/api/annotations`, `/api/liked`, `/api/follows`, `/api/archived-profiles`, `/api/lab-posts`, and the `/api/custom-study-*` routes. `POST /api/annotations` reads up to 100 posts at once; `PUT /api/annotations` sets a reaction to `1` (like), `-1` (dislike), or `0` (clear). `GET /api/annotations/liked` returns the current viewer's liked post keys. `GET /api/follows` returns followed account names and `PUT /api/follows` adds or removes a follow. `GET /api/archived-profiles` returns archived profile names; `PUT /api/archived-profiles` archives and unfollows a profile or restores it to the available list. `GET /api/lab-posts` returns saved post keys with category arrays; `PUT /api/lab-posts` adds or removes a post with `selected`, or toggles one of the three Lab categories with `category` and `enabled`. Removing a saved post removes its categories. Browser identity is issued by the Next routes in an HttpOnly cookie for personal annotations. Exp Lab uses a shared workspace ID across clients. Migration `0007_shared_lab.sql` copies previous browser-specific saves and tags into it. Migration `0011_custom_lab_studies.sql` adds study metadata and asset references. Uploaded file bytes use the `ASSETS` R2 binding in `wrangler.jsonc`; local Wrangler provides the bucket during development. Local D1, R2, and KV data stay under `.wrangler/`.
+
+## Topics news
+
+`NEWS_CACHE` stores a complete JSON archive for each Exa date, topic, and query. The cache key is deterministic; repeated requests reuse the same response. The full Exa request and response remain available through `GET /api/topics/news?date=YYYY-MM-DD&topic=fabric&raw=1`, while the default response contains normalized articles. The `provider` field identifies the source so more news providers can be added without losing provenance. `POST /api/topics/dedup` is called only by the browser's Review duplicates button. It archives the full Jev request and response under the collection's `:jev` key and returns proposals; `POST /api/topics/dedup/confirm` records the user's merge/keep choices in D1. `GET/PUT /api/topics/lab` stores selected sources and working notes in D1. Migration `0012_topics_news.sql` adds the claim, decision, and Topics Lab tables. Migration `0013_topics_studies.sql` enables blank Topics studies and article assets; each attached article keeps a title, URL, and summary snapshot in D1.
+
+News reading defaults to Traditional Chinese. English stories automatically request a shared `gpt-5.4-mini` translation when their dated collection opens; readers can view the original and see each story's source language. `GET /api/topics/translation` reads an existing shared result; `POST` translates only when absent. The Worker verifies the story against its dated Exa archive, keys the result by article ID and cleaned source hash, coordinates simultaneous requests with the D1 claims table, and stores the translated title/body together with the full OpenAI request and response in `NEWS_CACHE`. Because Workers KV is eventually consistent across locations, another region may see a newly translated story after a short delay. The translated body covers the cleaned excerpt supplied by Exa, which may be shorter than the original article.
+
+For local development, put `EXA_API_KEY`, `TYPESAFE_API_KEY`, and `OAI_MONITORED_API_KEY` in the ignored `.dev.vars` file, then restart Wrangler. Never commit `.dev.vars`. For a remote deployment, configure `OAI_MONITORED_API_KEY` as a Worker secret. The `NEWS_CACHE` namespace ID and D1 ID in `wrangler.jsonc` are local placeholders; real IDs are needed for a later remote deployment.
+
+The configured D1 and KV IDs are for local development only. Before a remote deployment, create real D1, R2, and KV resources, replace their IDs, then apply the migrations remotely. No remote resources are created by the local setup above.

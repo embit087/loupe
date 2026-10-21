@@ -1,0 +1,292 @@
+{
+ "asset": "DEMO00101.mp4",
+ "author": "demo.trail",
+ "kind": "video",
+ "sourceFile": "output/data/experiment-lab/DEMO00101/source/source.mp4",
+ "sourceSha256": [
+  "bb840226c290d2580c1ae860c661bb81440fbdb7af9d2f2f412c96d217854c4b"
+ ],
+ "feed": "sample",
+ "fps": 12.0,
+ "width": 360,
+ "height": 640,
+ "totalFrames": 180,
+ "durationSeconds": 15.0,
+ "heldStates": 5,
+ "uniqueSlides": 5,
+ "segmentation": "visual scenes",
+ "method": "Sample study: one settled moment per scene, with an invented transcript and on-screen text.",
+ "frames": [
+  {
+   "id": "01",
+   "sourceFrame": 0,
+   "timeSeconds": 0.0,
+   "totalVisibleSeconds": 3.0,
+   "occurrences": [
+    {
+     "startFrame": 0,
+     "endFrame": 36,
+     "startSeconds": 0.0,
+     "endSeconds": 3.0,
+     "durationSeconds": 3.0
+    }
+   ]
+  },
+  {
+   "id": "02",
+   "sourceFrame": 36,
+   "timeSeconds": 3.0,
+   "totalVisibleSeconds": 3.0,
+   "occurrences": [
+    {
+     "startFrame": 36,
+     "endFrame": 72,
+     "startSeconds": 3.0,
+     "endSeconds": 6.0,
+     "durationSeconds": 3.0
+    }
+   ]
+  },
+  {
+   "id": "03",
+   "sourceFrame": 72,
+   "timeSeconds": 6.0,
+   "totalVisibleSeconds": 3.0,
+   "occurrences": [
+    {
+     "startFrame": 72,
+     "endFrame": 108,
+     "startSeconds": 6.0,
+     "endSeconds": 9.0,
+     "durationSeconds": 3.0
+    }
+   ]
+  },
+  {
+   "id": "04",
+   "sourceFrame": 108,
+   "timeSeconds": 9.0,
+   "totalVisibleSeconds": 3.0,
+   "occurrences": [
+    {
+     "startFrame": 108,
+     "endFrame": 144,
+     "startSeconds": 9.0,
+     "endSeconds": 12.0,
+     "durationSeconds": 3.0
+    }
+   ]
+  },
+  {
+   "id": "05",
+   "sourceFrame": 144,
+   "timeSeconds": 12.0,
+   "totalVisibleSeconds": 3.0,
+   "occurrences": [
+    {
+     "startFrame": 144,
+     "endFrame": 180,
+     "startSeconds": 12.0,
+     "endSeconds": 15.0,
+     "durationSeconds": 3.0
+    }
+   ]
+  }
+ ],
+ "analysis": {
+  "title": "Layering guide for shoulder-season hikes",
+  "summary": "Demo Trail explains a three-layer system — base, mid and shell — one garment per scene, and ends on a recap of when to add or remove each layer.",
+  "frameSampleCount": 15,
+  "ocrIntervalSeconds": 1.0,
+  "audioMethod": "Sample transcript written for the demo; no audio was analysed.",
+  "caption": "Three layers I bring on every shoulder-season hike.",
+  "scenes": [
+   {
+    "frameId": "01",
+    "startSeconds": 0.0,
+    "endSeconds": 3.0,
+    "title": "Opening guide",
+    "visual": "Presenter on a ridge with three jackets laid out.",
+    "onScreen": [
+     "LAYERING 101"
+    ],
+    "narration": "Three layers, one simple rule: you should be a little cold when you start walking."
+   },
+   {
+    "frameId": "02",
+    "startSeconds": 3.0,
+    "endSeconds": 6.0,
+    "title": "Base layer",
+    "visual": "Close-up of a thin merino top.",
+    "onScreen": [
+     "BASE",
+     "merino 150"
+    ],
+    "narration": "The base layer moves sweat. Wool or synthetic, never cotton."
+   },
+   {
+    "frameId": "03",
+    "startSeconds": 6.0,
+    "endSeconds": 9.0,
+    "title": "Mid layer",
+    "visual": "Fleece held up against the light.",
+    "onScreen": [
+     "MID",
+     "grid fleece"
+    ],
+    "narration": "The mid layer traps warmth. A grid fleece breathes on the climb."
+   },
+   {
+    "frameId": "04",
+    "startSeconds": 9.0,
+    "endSeconds": 12.0,
+    "title": "Shell",
+    "visual": "Rain shell zipped up in wind.",
+    "onScreen": [
+     "SHELL",
+     "2.5 layer"
+    ],
+    "narration": "The shell blocks wind and rain. Keep it in the top of your pack."
+   },
+   {
+    "frameId": "05",
+    "startSeconds": 12.0,
+    "endSeconds": 15.0,
+    "title": "Recap",
+    "visual": "All three layers stacked on a rock.",
+    "onScreen": [
+     "BASE + MID + SHELL"
+    ],
+    "narration": "Add and remove layers before you overheat, not after."
+   }
+  ],
+  "transcript": [
+   {
+    "startSeconds": 0.0,
+    "endSeconds": 3.0,
+    "text": "Three layers, one simple rule: you should be a little cold when you start walking."
+   },
+   {
+    "startSeconds": 3.0,
+    "endSeconds": 6.0,
+    "text": "The base layer moves sweat. Wool or synthetic, never cotton."
+   },
+   {
+    "startSeconds": 6.0,
+    "endSeconds": 9.0,
+    "text": "The mid layer traps warmth. A grid fleece breathes on the climb."
+   },
+   {
+    "startSeconds": 9.0,
+    "endSeconds": 12.0,
+    "text": "The shell blocks wind and rain. Keep it in the top of your pack."
+   },
+   {
+    "startSeconds": 12.0,
+    "endSeconds": 15.0,
+    "text": "Add and remove layers before you overheat, not after."
+   }
+  ],
+  "ocrSamples": [
+   {
+    "timeSeconds": 0.0,
+    "strings": [
+     "LAYERING 101"
+    ]
+   },
+   {
+    "timeSeconds": 1.0,
+    "strings": [
+     "LAYERING 101"
+    ]
+   },
+   {
+    "timeSeconds": 2.0,
+    "strings": [
+     "LAYERING 101"
+    ]
+   },
+   {
+    "timeSeconds": 3.0,
+    "strings": [
+     "BASE",
+     "merino 150"
+    ]
+   },
+   {
+    "timeSeconds": 4.0,
+    "strings": [
+     "BASE",
+     "merino 150"
+    ]
+   },
+   {
+    "timeSeconds": 5.0,
+    "strings": [
+     "BASE",
+     "merino 150"
+    ]
+   },
+   {
+    "timeSeconds": 6.0,
+    "strings": [
+     "MID",
+     "grid fleece"
+    ]
+   },
+   {
+    "timeSeconds": 7.0,
+    "strings": [
+     "MID",
+     "grid fleece"
+    ]
+   },
+   {
+    "timeSeconds": 8.0,
+    "strings": [
+     "MID",
+     "grid fleece"
+    ]
+   },
+   {
+    "timeSeconds": 9.0,
+    "strings": [
+     "SHELL",
+     "2.5 layer"
+    ]
+   },
+   {
+    "timeSeconds": 10.0,
+    "strings": [
+     "SHELL",
+     "2.5 layer"
+    ]
+   },
+   {
+    "timeSeconds": 11.0,
+    "strings": [
+     "SHELL",
+     "2.5 layer"
+    ]
+   },
+   {
+    "timeSeconds": 12.0,
+    "strings": [
+     "BASE + MID + SHELL"
+    ]
+   },
+   {
+    "timeSeconds": 13.0,
+    "strings": [
+     "BASE + MID + SHELL"
+    ]
+   },
+   {
+    "timeSeconds": 14.0,
+    "strings": [
+     "BASE + MID + SHELL"
+    ]
+   }
+  ]
+ }
+}

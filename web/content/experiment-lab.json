@@ -1,0 +1,154 @@
+{
+ "asset": "20260517_DEMO00001.mp4",
+ "author": "demo.studio",
+ "sourceSha256": "393a784278da04acc975e42dae2acc467702acb1e64f966c313bdd9d015884a0",
+ "fps": 25.0,
+ "totalFrames": 52,
+ "durationSeconds": 2.08,
+ "heldStates": 11,
+ "uniqueSlides": 8,
+ "method": "Sample study: every decoded frame was compared to the previous one; repeats are grouped with their first appearance.",
+ "frames": [
+  {
+   "id": "01",
+   "sourceFrame": 0,
+   "timeSeconds": 0.0,
+   "totalVisibleSeconds": 0.4,
+   "occurrences": [
+    {
+     "startFrame": 0,
+     "endFrame": 10,
+     "startSeconds": 0.0,
+     "endSeconds": 0.4,
+     "durationSeconds": 0.4
+    }
+   ]
+  },
+  {
+   "id": "02",
+   "sourceFrame": 10,
+   "timeSeconds": 0.4,
+   "totalVisibleSeconds": 0.16,
+   "occurrences": [
+    {
+     "startFrame": 10,
+     "endFrame": 12,
+     "startSeconds": 0.4,
+     "endSeconds": 0.48,
+     "durationSeconds": 0.08
+    },
+    {
+     "startFrame": 14,
+     "endFrame": 16,
+     "startSeconds": 0.56,
+     "endSeconds": 0.64,
+     "durationSeconds": 0.08
+    }
+   ]
+  },
+  {
+   "id": "03",
+   "sourceFrame": 12,
+   "timeSeconds": 0.48,
+   "totalVisibleSeconds": 0.16,
+   "occurrences": [
+    {
+     "startFrame": 12,
+     "endFrame": 14,
+     "startSeconds": 0.48,
+     "endSeconds": 0.56,
+     "durationSeconds": 0.08
+    },
+    {
+     "startFrame": 20,
+     "endFrame": 22,
+     "startSeconds": 0.8,
+     "endSeconds": 0.88,
+     "durationSeconds": 0.08
+    }
+   ]
+  },
+  {
+   "id": "04",
+   "sourceFrame": 16,
+   "timeSeconds": 0.64,
+   "totalVisibleSeconds": 0.08,
+   "occurrences": [
+    {
+     "startFrame": 16,
+     "endFrame": 18,
+     "startSeconds": 0.64,
+     "endSeconds": 0.72,
+     "durationSeconds": 0.08
+    }
+   ]
+  },
+  {
+   "id": "05",
+   "sourceFrame": 18,
+   "timeSeconds": 0.72,
+   "totalVisibleSeconds": 0.24,
+   "occurrences": [
+    {
+     "startFrame": 18,
+     "endFrame": 20,
+     "startSeconds": 0.72,
+     "endSeconds": 0.8,
+     "durationSeconds": 0.08
+    },
+    {
+     "startFrame": 28,
+     "endFrame": 32,
+     "startSeconds": 1.12,
+     "endSeconds": 1.28,
+     "durationSeconds": 0.16
+    }
+   ]
+  },
+  {
+   "id": "06",
+   "sourceFrame": 22,
+   "timeSeconds": 0.88,
+   "totalVisibleSeconds": 0.08,
+   "occurrences": [
+    {
+     "startFrame": 22,
+     "endFrame": 24,
+     "startSeconds": 0.88,
+     "endSeconds": 0.96,
+     "durationSeconds": 0.08
+    }
+   ]
+  },
+  {
+   "id": "07",
+   "sourceFrame": 24,
+   "timeSeconds": 0.96,
+   "totalVisibleSeconds": 0.16,
+   "occurrences": [
+    {
+     "startFrame": 24,
+     "endFrame": 28,
+     "startSeconds": 0.96,
+     "endSeconds": 1.12,
+     "durationSeconds": 0.16
+    }
+   ]
+  },
+  {
+   "id": "08",
+   "sourceFrame": 32,
+   "timeSeconds": 1.28,
+   "totalVisibleSeconds": 0.8,
+   "occurrences": [
+    {
+     "startFrame": 32,
+     "endFrame": 52,
+     "startSeconds": 1.28,
+     "endSeconds": 2.08,
+     "durationSeconds": 0.8
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "../api/node_modules/wrangler/config-schema.json",
+  "name": "loupe-media",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "loupe-media" }],
+  "observability": { "enabled": true }
+}

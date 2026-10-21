@@ -1,0 +1,97 @@
+{
+  "note": "Credit budget and goals for SocialCrawl. Estimates are computed from content/socialcrawl.json (typical = base cost, worst = x-credit-cost-max); spend comes from the ledger that scripts/socialcrawl.py writes. Edit this file to change the budget or add a goal; every call must name one of these goal ids.",
+  "budget": {
+    "credits": 2500,
+    "pack": "Starter",
+    "period": "2026-10 to 2026-12",
+    "rule": "Stop and review before total spend passes 80% of the budget; a goal may not exceed its own cap without --over-cap."
+  },
+  "goals": [
+    {
+      "id": "kol-depth-test",
+      "title": "One-request depth test on @demo.trail",
+      "why": "How many posts a single SocialCrawl call returns: profile/posts/full with limit=50 walks up to five pages server-side (at most 25 credits). Instagram Looter stopped at 12 posts per request.",
+      "status": "planned",
+      "cap": 25,
+      "calls": [
+        {
+          "endpoint": "GET /instagram/profile/posts/full",
+          "count": 1,
+          "note": "limit=50, the one-call maximum"
+        }
+      ]
+    },
+    {
+      "id": "kol-refresh",
+      "title": "Refresh the 10 KOL accounts",
+      "why": "Replace the Instagram Looter snapshot of 2026-09-29 with SocialCrawl data: follower counts and the latest page of posts per account.",
+      "status": "planned",
+      "calls": [
+        {
+          "endpoint": "GET /instagram/profile",
+          "count": 10,
+          "note": "one per KOL account"
+        },
+        {
+          "endpoint": "GET /instagram/profile/posts",
+          "count": 10,
+          "note": "first page each; every KOL account had at most 12 posts in 2026"
+        }
+      ]
+    },
+    {
+      "id": "design-refresh",
+      "title": "Refresh the 80 Design accounts",
+      "why": "Same refresh for Demo Studio and the 79 related profiles; demo.type needs one extra page, as it did with Instagram Looter.",
+      "status": "planned",
+      "calls": [
+        {
+          "endpoint": "GET /instagram/profile",
+          "count": 80
+        },
+        {
+          "endpoint": "GET /instagram/profile/posts",
+          "count": 81,
+          "note": "80 first pages plus one continuation"
+        }
+      ]
+    },
+    {
+      "id": "kol-comments",
+      "title": "Comments on the 112 KOL posts",
+      "why": "The collection only has comment counts. The first page of comments carries free sentiment, question, purchase-intent and complaint labels, which the KOL study can use.",
+      "status": "planned",
+      "calls": [
+        {
+          "endpoint": "GET /instagram/post/comments",
+          "count": 112,
+          "note": "first page per post, default labels only"
+        }
+      ]
+    },
+    {
+      "id": "kol-discovery",
+      "title": "Similar accounts for each KOL",
+      "why": "A second source of candidates next to Instagram's related-profiles list, without include=profile.",
+      "status": "planned",
+      "calls": [
+        {
+          "endpoint": "GET /instagram/similar",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": "kol-transcripts",
+      "title": "Transcripts of the 93 KOL videos",
+      "why": "Speech for Exp Lab studies without running local transcription. Premium tier: do this last and only for posts saved to Exp Lab if the budget is tight.",
+      "status": "planned",
+      "calls": [
+        {
+          "endpoint": "GET /instagram/media/transcript",
+          "count": 93
+        }
+      ]
+    }
+  ]
+}

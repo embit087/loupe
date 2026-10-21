@@ -1,0 +1,95 @@
+{
+ "author": "demo.studio",
+ "asset": "20260517_DEMO00001.mp4",
+ "assessedAt": "2026-10-01",
+ "assessedBy": "Sample data, written for the demo",
+ "values": {
+  "transitions": {
+   "value": "Hard cuts only; no dissolves or wipes",
+   "confidence": "high"
+  },
+  "motionInFrame": {
+   "value": "None: every slide is a still; movement comes from the cutting",
+   "confidence": "high"
+  },
+  "texture": {
+   "value": "Flat digital colour, no grain",
+   "confidence": "high"
+  },
+  "markPlacement": {
+   "value": "One mark centred at roughly a fifth of the frame width",
+   "confidence": "medium"
+  },
+  "negativeSpace": {
+   "value": "Generous negative space around a single central mark",
+   "confidence": "medium"
+  },
+  "framing": {
+   "value": "Straight-on, centred compositions",
+   "confidence": "high"
+  },
+  "typeFamilies": {
+   "value": "One bold grotesk for every label",
+   "confidence": "medium"
+  },
+  "typeSetting": {
+   "value": "Small uppercase labels with underscores, bottom left",
+   "confidence": "medium"
+  },
+  "motif": {
+   "value": "One geometric mark repeated across every application",
+   "confidence": "high"
+  },
+  "contexts": {
+   "value": "App icon, poster, tote bag, business card, signage, packaging",
+   "confidence": "high"
+  },
+  "photography": {
+   "value": "None: flat illustrated mockups",
+   "confidence": "high"
+  },
+  "audio": {
+   "value": "Not analysed",
+   "confidence": "low"
+  },
+  "genre": {
+   "value": "Brand identity showcase reel (quick-cut mockup montage)",
+   "confidence": "high"
+  },
+  "communication": {
+   "value": "A fast barrage proves the mark works everywhere; the long end card lets it land",
+   "confidence": "medium"
+  },
+  "voice": {
+   "value": "Precise · restrained · confident",
+   "confidence": "medium"
+  },
+  "references": {
+   "value": "Flash-cut identity reels",
+   "confidence": "medium"
+  },
+  "relevance": {
+   "value": "Shows how one mark carries across many surfaces",
+   "confidence": "medium"
+  },
+  "limits": {
+   "value": "Sample data: values were written for the demo, not measured from a real post",
+   "confidence": "high"
+  }
+ },
+ "keep": [
+  "strict monochrome",
+  "one mark in every frame",
+  "hard cuts held for 2 frames",
+  "a long final hold"
+ ],
+ "vary": [
+  "the mockup objects",
+  "the label wording"
+ ],
+ "avoid": [
+  "colour",
+  "dissolves",
+  "more than one logo"
+ ]
+}

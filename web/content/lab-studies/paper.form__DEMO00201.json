@@ -1,0 +1,60 @@
+{
+ "asset": "DEMO00201.carousel",
+ "author": "paper.form",
+ "kind": "carousel",
+ "sourceFile": null,
+ "sourceSha256": [
+  "e72297039ebd2f3869299b7d11408f228573528d90f962d39c670a5c69ff76b0",
+  "6aacf8bce224d6862477cbe10a4327dd17018805d1e2e6955c43d188ea79d4d9",
+  "e06199491ea84d7e063866ee08d0465dda6bf50af9775ffe2fb83428f77cc009",
+  "14600c1c8bcd5b60b7921509988c06ea3fc255cbcc7a9db99497fa1449e41b48",
+  "e2bd9e5789bd3ec8a3b4b84ebe2b54f71ee9f1ca3e5fcc0c01e5ed289febffc1"
+ ],
+ "feed": "sample",
+ "fps": 0,
+ "width": 800,
+ "height": 1000,
+ "totalFrames": 5,
+ "durationSeconds": 0,
+ "heldStates": 5,
+ "uniqueSlides": 5,
+ "segmentation": "items",
+ "method": "Sample study: each carousel item is one slide.",
+ "frames": [
+  {
+   "id": "01",
+   "sourceFrame": 0,
+   "timeSeconds": 0,
+   "totalVisibleSeconds": 0,
+   "occurrences": []
+  },
+  {
+   "id": "02",
+   "sourceFrame": 1,
+   "timeSeconds": 0,
+   "totalVisibleSeconds": 0,
+   "occurrences": []
+  },
+  {
+   "id": "03",
+   "sourceFrame": 2,
+   "timeSeconds": 0,
+   "totalVisibleSeconds": 0,
+   "occurrences": []
+  },
+  {
+   "id": "04",
+   "sourceFrame": 3,
+   "timeSeconds": 0,
+   "totalVisibleSeconds": 0,
+   "occurrences": []
+  },
+  {
+   "id": "05",
+   "sourceFrame": 4,
+   "timeSeconds": 0,
+   "totalVisibleSeconds": 0,
+   "occurrences": []
+  }
+ ]
+}
